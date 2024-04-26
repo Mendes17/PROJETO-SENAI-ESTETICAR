@@ -1,0 +1,146 @@
+@media(min-width: 1220px) {
+    #bt-menu {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        padding-top: 32px;
+        padding-right: 32px;
+    }
+
+    nav ul {
+        list-style: none;
+        text-align: center;
+        background-color: rgba(247, 226, 201, 0);
+        position: relative;
+        z-index: 1;
+        display: flex;
+        gap: 16px;
+        flex-direction: row;
+        height: 0;
+        width: 100%;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 16px 30px;
+        background-color: #0093FD;
+        color: #fff;
+        border-radius: 16px;
+    }
+
+    nav ul li a:hover {
+        background-color: #fff;
+        color: #0093FD;
+    }
+
+    nav ul li a:active {
+        background-color: #b2b2b2;
+        color: #005b9c;
+    }
+
+    #logo {
+        width: 200px;
+    }
+
+    .button-service:hover {
+        background-color: #fff;
+        color: #0093FD;
+    }
+
+    .button-service:active {
+        background-color: #b2b2b2;
+        color: #005b9c;
+    }
+
+    footer {
+        padding: 32px 32px;
+    }
+
+    #titulo-desktop {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        color: #0093FD;
+        font-size: 16px;
+        margin-bottom: 64px;
+    }
+
+    #logo-whatsapp {
+        width: 60px;
+    }
+
+    #logo-whatsapp:hover {
+        transform: scale(1.20);
+        transition: 750ms ease-in-out;
+    }
+
+    .section-home {
+        width: 100%;
+        display: flex;
+        gap: 16px;
+    }
+
+    .cards-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #000;
+        padding: 16px;
+        border-radius: 8px;
+        gap: 16px;
+        margin-bottom: 32px;
+        width: 400px;
+        height: 600px;
+    }
+
+    .cards-home article {
+        overflow-x: scroll;
+    }
+
+    .titulo-home {
+        display: block;
+    }
+
+    .alinhamento-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .alinhamento-section .cards {
+        width: 400px;
+        height: 600px;
+    }
+
+    .alinhamento-section .cards article {
+        overflow-x: hidden;
+    }
+
+    section {
+        max-width: 880px;
+    }
+
+    .cards {
+        padding: 24px;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .lista-servicos {
+        max-width: 480px;
+    }
+
+    strong:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

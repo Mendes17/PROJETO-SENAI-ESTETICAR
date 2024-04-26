@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Serviço - ESTETICAR</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media-query.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <img src="img/menu.png" alt="Open-Menu" id="bt-menu" onclick="openMenu()">
+    <img src="img/menu-fechar.png" alt="Close-Menu" id="bt-close" onclick="closeMenu()">
+
+    <div id="container">
+        <header>
+            <img src="img/logo-esteticar.png" alt="Logo - Esteticar" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+                    <li><a href="servico.html">SERVIÇOS</a></li>
+                    <li><a href="promocoes.html">PROMOÇÕES</a></li>
+                    <li><a href="localizacao.html">LOCALIZAÇÃO</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="titulo-desktop">
+                <h1 id="obrigado">AGENDE SEU SERVIÇO JÁ!</h1>
+            </div>
+
+
+            <section class="cards" id="formulario">
+                <article>
+                    <h2 class="h2-azul">AGENDAR SERVIÇO:</h2>
+
+                    <form>
+
+                        <div class="paragrafo">
+                            <label for="inNome">Digite seu nome:</label> <br> <br>
+                            <input type="text" name="nome" id="inNome" required>
+                        </div>
+
+                        <div class="paragrafo">
+                            <label for="inNum">Digite seu número(celular):</label> <br> <br>
+                            <input type="number" name="número de celular" id="inNum" maxlength="9" required>
+                        </div>
+
+                        <div class="paragrafo">
+                            <label for="inEmail">Digite seu Email:</label> <br> <br>
+                            <input type="email" name="email" id="inEmail" required>
+                        </div>
+
+                        <div class="paragrafo">
+                            <label for="inData">Selecione uma Data:</label> <br> <br>
+                            <input type="date" name="data" id="inData" required>
+                        </div>
+
+                        <div class="paragrafo">
+                            <label for="inService">Selecione o Serviço:</label> <br> <br>
+                            <select name="serviços" id="inService" required>
+                                <option value="Nenhum">Selecione o Serviço</option>
+                                <option value="Lavagem Completa">Lavagem Completa</option>
+                                <option value="Lavagem de Motor">Lavagem de Motor</option>
+                                <option value="Aspiração">Aspiração</option>
+                                <option value="Polimento">Polimento</option>
+                                <option value="Cristalização">Cristalização</option>
+                                <option value="Higienização Interna">Higienização Interna</option>
+                                <option value="Limpeza de Bancos de Couro">Limpeza de Bancos de Couro</option>
+                                <option value="Recuperação de Faróis">Recuperação de Faróis</option>
+                                <option value="Tratamento de Pintura">Tratamento de Pintura</option>
+                                <option value="Revitalização de Plásticos e Borrachas">Revitalização de Plásticos e
+                                    Borrachas</option>
+                            </select> 
+                        </div>
+
+                        <div class="paragrafo">
+                            <label for="inModelo">Modelo do Veículo:</label> <br><br>       
+                            <input type="text" name="modelo-veículo" id="inModelo" required>
+                        </div>
+
+                        <div class="paragrafo">
+                            <div class="center-button">
+                                <input type="submit" value="Enviar" class="button">
+                            </div>
+                        </div>
+                    </form>
+                </article>
+            </section>
+
+            <section class="cards" id="agradecimento-servico">
+                <article>
+                    <h2 class="h2-azul">SERVIÇO AGENDADO!</h2>
+                    <h3></h3>
+                    <div class="paragrafo">
+                        <div class="center-button">
+                            <button class="button">Fechar</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <script src="JS/script.js"></script>
+    <script src="JS/form.js"></script>
+    </main>
+    </div>
+</body>
+
+</html>
